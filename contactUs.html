@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #fieldset1{
+            width: 40%;
+        }
+        #fieldset2{
+            margin: 10px;
+        }
+        .allHr{
+            color: rgb(230, 155, 155);
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset id="fieldset1">
+        <header>
+            <p><h1>Contact Us</h1></p>
+            <ul>
+                <li><a href="jindal.html">Home</a></li>
+                <li><a href="jindal.html#aboutLTS">About LTS</li>
+                <li><a href="jindal.html#ourMenu">Our Menu</a></li>
+                <li><a href="shopHours.html">Store Hours</a></li>
+            </ul>
+        <br>
+    <div class="imgCap">
+        <img src="download.jpeg" alt="A Tray of Tasty Tacos image">
+        <br>
+        <caption>A Tray of Tasty Tacos</caption>
+        <hr class="allHr">
+        </header>
+
+        <p><h2>Our Contact Form</h2></p>
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset id="fieldset2">
+                <legend>Send Us A Message</legend>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                </p>
+                <label for="yourMessage">Your Messasge:</label>
+                <textarea name="yourMessage" id="yourMessage" cols="30" rows="5" placeholder="Enter your message here"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <p><a href="#">Back to Top</a></p>
+        <hr class="allHr">
+        <p>Copyright &copy; The Little Taco Shop</p>
+    </fieldset>
+
+</body>
+</html>
